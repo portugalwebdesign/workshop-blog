@@ -17,8 +17,10 @@ from django.conf.urls import url
 from django.contrib import admin
 
 from pages import views
+from blog import views as blog_views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.home, name='home'),
+    url(r'^articles/(?P<slug>[\w-]+)/$', blog_views.article_detail, name='article-detail'),
 ]
