@@ -1,7 +1,10 @@
 {% extends 'pages/base.html' %}
 
 {% block content %}
-  <h1>My blog using django!</h1>
+  <div class="page-header">
+    <h1>My blog using django!</h1>
+  </div>
+
 
   {% for article in articles %}
     <h2><a href="{{ article.get_absolute_url }}">{{ article.title }}</a></h2>
@@ -12,5 +15,6 @@
       {% endfor %}
     </h4>
     <p>{{ article.content|linebreaks|truncatewords:80 }}</p>
+    <hr>
   {% endfor %}
 {% endblock %}

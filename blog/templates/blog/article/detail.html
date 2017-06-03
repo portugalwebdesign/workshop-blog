@@ -20,7 +20,7 @@
   <form action="." method="post">
     {% csrf_token %}
     {{ comment_form.as_p }}
-    <p><input type="submit" value="Send"></p>
+    <p><input type="submit" class="btn btn-success" value="Send"></p>
   </form>
 
 {% endblock %}
