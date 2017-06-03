@@ -35,3 +35,13 @@ class Article(models.Model):
 
     def get_absolute_url(self):
         return reverse('article-detail', args=[self.slug])
+
+
+class Comment(models.Model):
+    article = models.ForeignKey(Article, related_name='comments')
+    name = models.CharField(max_length=120)
+    text = models.TextField()
+
+    def __str__(self):
+        return self.name
+
