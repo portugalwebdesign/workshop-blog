@@ -4,4 +4,23 @@
   <h1>{{ article.title }}</h1>
   <a href="{% url 'home' %}">home</a>
   <p>{{ article.content|linebreaks }}</p>
+
+  <h2>Comments</h2>
+
+  {% for comment in article.comments.all %}
+    <strong>{{ comment.name }}</strong> said:
+    {{ comment.text }}
+  {% empty %}
+    <p>This article hasn't any comment yet, leave one</p>
+  {% endfor %}
+
+
+  <h3>Leave a comment</h3>
+
+  <form action="." method="post">
+    {% csrf_token %}
+    {{ comment_form.as_p }}
+    <p><input type="submit" value="Send"></p>
+  </form>
+
 {% endblock %}
