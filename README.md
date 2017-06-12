@@ -29,6 +29,15 @@ instalação e setup:
 
 https://docs.google.com/presentation/d/1HOzTvpo0vbF2n6WbvUQkqzWxx1kOmFHf02PKYl5wliI/edit?usp=drivesdk
 
+modelos:
+
+https://docs.google.com/presentation/d/1mCXZwiH9EJ-fAQHAYvavOlSwLKQAj_1bFSE-65wlD08/edit?usp=sharing
+
 templates:
 
 https://docs.google.com/presentation/d/1JxUoMQL5ptcZRtF1OguzHzgkF_6PhPhfTTvBozt7RVs/edit?usp=drivesdk
+
+
+formulários:
+
+https://docs.google.com/presentation/d/1LHgcmT4uuQenJObXDZi2KZgedb5d7y_ig2BUaEblgAg/edit?usp=sharing
